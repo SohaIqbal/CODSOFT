@@ -25,6 +25,7 @@ html, body {
     position: relative;
     overflow: hidden;
     top: 1.9vw;
+    
 }
 .main .semimain{
     display: flex;
@@ -140,7 +141,7 @@ html, body {
         transform: translateY(0); /* Start and end position (no movement) */
     }
     50% {
-        transform: translateY(-30px); /* Middle position (move up) */
+        transform: translateY(-25px); /* Middle position (move up) */
     }
 }
 .nav img.appear {
@@ -195,7 +196,7 @@ html, body {
 }
 
 
-@media(max-width:1084px), (min-width:800px) {
+/* @media(max-width:1018px), (min-width:800px) {
     .smallimage{
         height: 20vh;
         top: 40vw;
@@ -203,34 +204,121 @@ html, body {
     .smallimage #overlay2{
         height: 18vh;
     }
-}
+    
+} */
 
  
-@media(max-width:800px) {
+@media (max-width:1018px)  {
+
+    .main .landing{
+        margin-bottom: 15vw;
+    }
+    .main .semimain{
+        margin-bottom: 19vw;
+    }
+    
+    .text{
+        top: 50%;
+        line-height: 1.4;
+    }
+
+
     .smallimage{
         height: 18vh;
-        top: 60vw;
+        top: 30vw;
     }
     .smallimage #overlay2{
         height: 18vh;
     }
     .verticaltext h1{
         -webkit-text-stroke-width: 1.3px;
+        font-size: 3vw;
     }
     .part3 .text h1{
         top: 10vw;
-        line-height: 6vw;
+        line-height: 6vw; 
     }
     .nav h5{
         font-size: 2vw;
     }
     .nav img{
         height: 5vw;
+        opacity: 0;
+        transition: opacity 1s ease; /* Define the transition */
+        animation: moveUpDown 2.8s ease-in-out infinite;
     }
     .main .landing p{
-        font-size: 3vw;
+        font-size: 3.3vw;
     }
     .main .landing a{
-        font-size: 2vw;
+        font-size: 2.2vw;
+        margin-left: 1.1vw;
     }
+    .main .semimain .part1{
+        height: 60vh;
+    }
+    .main .semimain .part2{
+        height: 60vh;
+    }
+    .main .semimain .part3{
+        height: 60vh;
+    }
+}
+@media (max-width:800px){
+    .smallimage{
+        height: 15vh;
+        top: 40vw;
+    }
+    .smallimage #overlay2{
+        height: 15vh;
+    }
+
+}
+@media (max-width:600px){
+    .smallimage{
+        height: 13vh;
+        top: 48vw;
+    }
+    .smallimage #overlay2{
+        height: 13vh;
+    }
+
+}
+
+@media (max-width:530px){
+    .smallimage{
+        height: 12vh;
+        top: 42vw;
+    }
+    .smallimage #overlay2{
+        height: 12vh;
+    }
+    .main .semimain .part1{
+        height: 50vh;
+        width: 17vw;
+    }
+    .main .semimain .part2{
+        height: 50vh;
+        width: 51vw;
+    }
+    .main .semimain .part3{
+        height: 50vh;
+        width: 11vw;
+    }
+    .part2 #overlay{
+        width: 51vw;
+
+    }
+    .verticaltext h1{
+        -webkit-text-stroke-width: 1.4px;
+        font-size: 4vw;
+    }
+    .main .landing{
+        margin-bottom: 30vw;
+    }
+    .main .semimain{
+        margin-bottom: 50vw;
+    }
+
+
 }
