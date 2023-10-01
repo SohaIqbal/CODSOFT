@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="main">
+        <div id="cursor">
+        </div>
         <div class="landing">
              <p>Landing Page.</p>
-             <a href="#">About</a>
-             <a href="#">Products</a>
-             <a href="#">Contact</a>
+             <a href="#home">About</a>
+             <a href="#product">Products</a>
+             <a href="#contact">Contact</a>
         </div>
-        <div class="semimain">
+        <div class="semimain" id="home">
             <div class="part1"></div>
             <div class="part2">
                 <div id="overlay"></div>
@@ -37,10 +40,73 @@
             </div>
         </div>
     </div>
+    <div class="secondsection" id="product">
+        <div id="cursor">
+        </div>
+        <div class="content">
+            <div class="left">
+                <h5>EXPLORE</h5>
+                <h1>OUR BEST SELLERS.</h1>
+                <p>From soothing lavender to invigorating citrus, our collection offers a symphony of scents to transform any space into an oasis of tranquility.</p>
+                <button>SHOP NOW</button>
+            </div>
+            <div class="right">
+                <div class="elem">
+                    <img src="https://i0.wp.com/www.theotheraesthetic.com/wp-content/uploads/2022/03/Pink-and-Gold-Aromatherapy-Candle-8.jpg" alt="">
+                    <h4>Fall Candle.</h4>
+                </div>
+                <div class="elem">
+                    <img src="https://i.pinimg.com/1200x/2f/ec/58/2fec58d077d559fd8d067b6468425dc6.jpg" alt="">
+                    <h4>Nudesse.</h4>
+                </div>
+                <div class="elem">
+                    <img src="https://i.pinimg.com/1200x/be/95/19/be951986902cb1d41247788fe545b479.jpg" alt="">
+                    <h4>Macaron Rose.</h4>
+                </div>
+                <div class="elem">
+                    <img src="https://cdn.shopify.com/s/files/1/0281/0344/2480/files/Pink-Candle-28-_Sister.jpg?v=1684398470&width=360" alt="">
+                    <h4>Gift Me</h4>
+                </div>
+                <div class="elem">
+                    <img src="https://www.kindredfires.com/cdn/shop/files/Frosted-Candle-278-_60.jpg?v=1687428502&width=1946" alt="">
+                    <h4>60 party!</h4>
+                </div>
+
+                <p>Scroll for more !<i class='bx bx-right-arrow-alt'></i></p>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="contact" id="contact">
+        <div id="cursor">
+        </div>
+        <div class="contact-text">
+            <h2>Contact <span>Me</span></h2>
+            <h4>Let's work together</h4>
+            <p>It's always fun working together ! Feel free to contact me.</p>
+            <div class="contact-list">
+                <li> <i class='bx bxs-send' style='color:#e0a9b1'  ></i>suhaiqbal30@gmail.com</li>
+                <li><i class='bx bx-phone' style='color:#e0a9b1'  ></i>03166623769</li>
+            </div>
+            <div class="contact-icons">
+                <a href="#" ><i class='bx bxl-facebook'></i></a>
+                <a href="#" ><i class='bx bxl-instagram'></i></a>
+                <a href="#" ><i class='bx bxl-linkedin' ></i></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="" placeholder="Enter your name: " required>
+                <input type="email" placeholder="Enter your email: " required>
+                <textarea name="" id="" cols="40" rows="10" placeholder="Enter your message: "></textarea>
+            </form>
+            <button class="button"> Submit</button>
+        </div>
+
+    </section>
+
+    
     <script src="j.js"></script>
 </body>
 </html>
-
-
-
-<!-- https://banner2.cleanpng.com/20180711/tea/kisspng-computer-icons-smiley-emoticon-happiness-clip-art-flat-faces-5b45a5b40e2e81.8770377815312910600581.jpg -->
